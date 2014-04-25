@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script>
+        $(function() {
+            var paper = Raphael(document.getElementById("paper"), 100, 100);
+            var circle = paper.circle(50, 50, 50);
+            var uuid = Raphael.createUUID();
+            var pattern = document.createElementNS("http://www.w3.org/2000/svg", "pattern");
+            var backgroundImage = paper.image("img/pilot1.png", 0, 0, 1, 1);
+            pattern.setAttribute("id", uuid);
+            pattern.setAttribute("x", 0);
+            pattern.setAttribute("y", 0);
+            pattern.setAttribute("height", 1);
+            pattern.setAttribute("width", 1);
+            pattern.setAttribute("patternContentUnits", "objectBoundingBox");
+
+            $(backgroundImage.node).appendTo(pattern);
+
+            $(pattern).appendTo(paper.defs);
+            $(circle.node).attr("fill", "url(#" + pattern.id + ")");
+        });
+    </script>
+</head>
+<body>
+<div id="paper"></div>
+</body>
+</html>
