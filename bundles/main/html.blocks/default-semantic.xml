@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?><default-semantic xmlns:a="http://slcf/templates/settings/bem-scheme/additional" xmlns:b="http://slcf/templates/settings/bem-scheme/block" xmlns:d="http://slcf/templates/settings/bem-scheme/data" xmlns:e="http://slcf/templates/settings/bem-scheme/element" xmlns:p="http://slcf/templates/settings/bem-scheme/pointer" xmlns:m="http://slcf/templates/settings/bem-scheme/modification" xmlns:t="http://slcf/templates/settings/bem-scheme/template" xmlns:x="http://slcf/templates/settings/bem-scheme/xhtml" xmlns:un="http://slcf/templates/settings/bem-scheme/unknown-namespace" xmlns:alxc="http://slcf/templates/settings/bem-scheme/additional-legacy-xhtml-class">
+
+    <!-- main blocks > -->
+    <b:header tag="header"/>
+    <b:footer tag="footer"/>
+    <b:aside tag="aside"/>
+    <b:navigation-block tag="nav"/>
+    <b:main-section tag="section"/>
+    <!-- main blocks < -->
+    <!--form > -->
+    <b:form tag="form" x:action="?"/>
+    <b:form-per-se tag="form" x:action="?"/>
+
+    <!--form-fields-group > -->
+    <b:form-fields-group tag="fieldset" />
+    <e:title block="form-fields-group" tag="legend"/>
+    <!--form-fields-group < -->
+
+    <!--form-fields-list > -->
+    <b:form-fields-list tag="ul"/>
+    <!--form-fields-list < -->
+
+    <!--field-composition > -->
+    <b:field-composition tag="dl"/>
+    <e:title block="field-composition" tag="dt"/>
+    <e:title-text block="field-composition" tag="span"/>
+    <e:content block="field-composition" tag="dd"/>
+    <!--field-composition < -->
+
+    <!--form-field > -->
+    <b:form-field tag="input" x:name="fField" x:id="fField"/>
+    <m:type val="text" block="form-field" x:type="text"/>
+    <m:type val="password" block="form-field" x:type="password"/>
+    <m:type val="textarea" block="form-field" tag="textarea" x:rows="3"/>
+    <m:type val="submit" block="form-field" x:type="submit"/>
+    <m:type val="button" block="form-field" x:type="button"/>
+    <m:type val="checkbox" block="form-field" x:type="checkbox"/>
+    <m:type val="radio" block="form-field" x:type="radio"/>
+    <m:type val="radio-button" block="form-field" x:type="radio"/>
+    <m:type val="select" block="form-field" tag="select"/>
+    <m:type val="email" block="form-field" x:type="email"/>
+    <m:type val="file-upload" block="form-field" x:type="file"/>
+
+    <e:option-group block="form-field" tag="optgroup" x:label="option-group-label"/>
+    <e:option block="form-field" tag="option"/>
+    <!--form-field < -->
+
+    <!--form-field-label > -->
+    <b:form-field-label tag="label" />
+    <!--form-field-label < -->
+
+    <m:content val="form-field" block="billet" tag="label"/>
+    <b:form-field-remark tag="small"/>
+    <b:required-field-symbol tag="small"/>
+    <b:form-field-intro tag="span"/>
+    <!--form < -->
+
+</default-semantic>
