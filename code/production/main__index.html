@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 		
 		
 <html lang="ru" id="nojs" xml:lang="ru">
@@ -37,8 +36,29 @@
         <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
         <!-- Add fancyBox and main JS -->
         <script type="text/javascript" src="js/jquery.fancybox.js"></script>
-        <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
-        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+        
+        
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                <link rel="stylesheet" href="css/responsiveslides.css">
+                <link rel="stylesheet" href="css/demo.css">
+                <script src="js/responsiveslides.min.js"></script>
+                <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+     // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+      });
+
+    });
+  </script>
+                
+
 		
             <script type="text/javascript" src="js/jquery.easing.min.js"></script>
             <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
@@ -97,10 +117,47 @@
             </ul>
         </nav>
     
+                
+         <div class="b-phone-block">
+            <span class="b-phone-block__code">+7&nbsp;800</span>
+                
+                    &nbsp;267&nbsp;16&nbsp;87
+                
+        </div>
+    
             
             </div>
         </div>
         <div class="b-header__desc">
+            
+            <div id="wrapper">
+                        <!-- Slideshow 4 -->
+                        <div class="callbacks_container">
+                          <ul class="rslides" id="slider4">
+                            <li>
+                              <img src="images/content/slide-1.jpg" alt="">
+                              <p class="caption">This is a caption</p>
+                            </li>
+                            <li>
+                              <img src="images/content/slide-2.jpg" alt="">
+                              <p class="caption">This is another caption</p>
+                            </li>
+                            <li>
+                              <img src="images/content/slide-3.jpg" alt="">
+                              <p class="caption">The third caption</p>
+                            </li>
+                            <li>
+                              <img src="images/content/slide-4.jpg" alt="">
+                              <p class="caption">The forth caption</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- This is here just to demonstrate the callbacks -->
+                        <ul class="events">
+                          <li><h3>Example 4 callback events</h3></li>
+                        </ul>
+                        </div>
+                    
             <div class="b-stripe__in">
                 <div class="b-header__text">Hi there! We are the new kids on the block <br/>and we build awesome websites and mobile apps.</div>
                 <div class="b-button">
@@ -567,7 +624,6 @@
 </html>
 
 	
-
 	
 
 

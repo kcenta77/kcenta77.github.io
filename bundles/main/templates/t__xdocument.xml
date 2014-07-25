@@ -53,8 +53,30 @@
         <b:xscript x:src="js/jquery-1.11.0.min.js"/>
         <cdata><![CDATA[<!-- Add fancyBox and main JS -->]]></cdata>
         <b:xscript x:src="js/jquery.fancybox.js"/>
-        <b:xscript x:src="js/jquery.fancybox-media.js"/>
-        <b:xscript x:src="js/jquery.mixitup.min.js"/>
+        <!--<b:xscript x:src="js/jquery.fancybox-media.js"/>
+        <b:xscript x:src="js/jquery.mixitup.min.js"/>-->
+        <cdata><![CDATA[
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                <link rel="stylesheet" href="css/responsiveslides.css">
+                <link rel="stylesheet" href="css/demo.css">
+                <script src="js/responsiveslides.min.js"></script>
+                <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+     // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+      });
+
+    });
+  </script>
+                ]]></cdata>
+
 		<p:content/>
 	</t:javascript_head>
 

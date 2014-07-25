@@ -18,6 +18,7 @@
             <p:header>
                 <p:logo/>
                 <p:navigation-block/>
+                <p:phone-block/>
             </p:header>
         </b:stripe>
     </t:stripe_content_header>

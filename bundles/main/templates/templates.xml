@@ -518,6 +518,35 @@
             </e:in>
         </e:top>
         <e:desc>
+            <cdata><![CDATA[
+            <div id="wrapper">
+                        <!-- Slideshow 4 -->
+                        <div class="callbacks_container">
+                          <ul class="rslides" id="slider4">
+                            <li>
+                              <img src="images/content/slide-1.jpg" alt="">
+                              <p class="caption">This is a caption</p>
+                            </li>
+                            <li>
+                              <img src="images/content/slide-2.jpg" alt="">
+                              <p class="caption">This is another caption</p>
+                            </li>
+                            <li>
+                              <img src="images/content/slide-3.jpg" alt="">
+                              <p class="caption">The third caption</p>
+                            </li>
+                            <li>
+                              <img src="images/content/slide-4.jpg" alt="">
+                              <p class="caption">The forth caption</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- This is here just to demonstrate the callbacks -->
+                        <ul class="events">
+                          <li><h3>Example 4 callback events</h3></li>
+                        </ul>
+                        </div>
+                    ]]></cdata>
             <e:in block="stripe">
                 <e:text>
                     Hi there! We are the new kids on the block <cdata><![CDATA[<br/>]]></cdata>and we build awesome
@@ -555,5 +584,16 @@
         </b:navigation-block>
     </t:navigation-block>
 
-
+   <t:phone-block>
+         <b:phone-block>
+            <e:code tag="span">
+                <cdata>
+                    <![CDATA[+7&nbsp;800]]>
+                </cdata>
+                </e:code>
+                <cdata>
+                    <![CDATA[&nbsp;267&nbsp;16&nbsp;87]]>
+                </cdata>
+        </b:phone-block>
+    </t:phone-block>
 </templates>

@@ -51,6 +51,16 @@
   src: url('../fonts/CenturyGothic.eot');
   src: url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('../fonts/CenturyGothic.woff') format('woff'), url('../fonts/CenturyGothic.ttf') format('truetype'), url('t../fonts/CenturyGothic.svg#CenturyGothic') format('svg');
 }
+@font-face {
+  font-family: 'Intro-Light-Alt';
+  src: url('../fonts/Intro-Light-Alt.eot');
+  src: url('../fonts/Intro-Light-Alt.eot?#iefix') format('embedded-opentype'), url('../fonts/Intro-Light-Alt.otf') format('opentype'), url('../fonts/Intro-Light-Alt.woff') format('woff'), url('../fonts/Intro-Light-Alt.ttf') format('truetype'), url('t../fonts/Intro-Light-Alt.svg#Intro-Light-Alt') format('svg');
+}
+@font-face {
+  font-family: 'Intro';
+  src: url('../fonts/Intro.eot');
+  src: url('../fonts/Intro.eot?#iefix') format('embedded-opentype'), url('../fonts/Intro.otf') format('opentype'), url('../fonts/Intro.woff') format('woff'), url('../fonts/Intro.ttf') format('truetype'), url('t../fonts/Intro.svg#Intro') format('svg');
+}
 .b-form_content_feedback .b-form-field[type="text"],
 .b-form_content_feedback .b-form-field_type_textarea {
   width: 95%;
@@ -217,7 +227,6 @@ body {
 .b-section_content_header,
 .b-stripe_content_header {
   background: #ffffff;
-  padding: 2em 0;
 }
 .b-section_content_footer,
 .b-stripe_content_footer {
@@ -232,10 +241,6 @@ body {
   position: fixed;
   top: 0;
   z-index: 9;
-}
-.b-header__desc {
-  padding: 20em 0 7em;
-  background: url(../images/content/slide-1.jpg) 50% 50% no-repeat;
 }
 .b-header__text {
   font-size: 2.5em;
@@ -295,6 +300,9 @@ body {
 .b-navigation-block .b-link_content_toggle-menu:hover {
   background: #5D2F74;
 }
+.b-navigation.b-list {
+  padding: 18px 12px 12px 28px;
+}
 .b-navigation__item {
   display: inline-block;
 }
@@ -307,9 +315,9 @@ body {
   border-radius: 3px;
   color: #000;
   display: block;
-  font-size: 1em;
+  font-size: 12px;
   font-family: 'CenturyGothic';
-  padding: 5px 20px;
+  padding: 5px 5px 5px 0;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -318,14 +326,28 @@ body {
   transition: all 0.3s ease 0s;
 }
 .b-navigation__item .b-link:hover {
-  background: #643a79;
+  color: #000;
 }
 .b-navigation__item .b-link:before {
-  content: "";
+  content: "\/";
   color: #c5c5c5;
+  padding-right: 16px;
+}
+.b-navigation__item:first-child .b-link:before {
+  display: none;
 }
 .b-navigation__item.b-current .b-link {
-  background: #643a79;
+  color: #000;
+}
+.b-phone-block {
+  font-size: 20px;
+  font-family: 'Intro-Light-Alt';
+  float: right;
+  margin: 32px 23% 0 0;
+  font-weight: bold;
+}
+.b-phone-block__code {
+  color: #3a98d8;
 }
 @media screen and (max-width: 800px) {
   .b-navigation-block {
@@ -527,6 +549,201 @@ body {
   .b-form-field[type="text"],
   .b-form-field_type_textarea {
     margin-bottom: 1em;
+  }
+}
+/*! http://responsiveslides.com v1.54 by @viljamis */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+.rslides {
+  margin: 0 auto 40px;
+}
+#slider2,
+#slider3 {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 auto;
+}
+.rslides_tabs {
+  padding: 0;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), inset 0 0 5px #000000;
+  -moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), inset 0 0 5px #000000;
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.3), inset 0 0 5px #000000;
+  font-size: 18px;
+  list-style: none;
+  margin: 0 auto 50px;
+  max-width: 540px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+.rslides_tabs li {
+  display: inline;
+  float: none;
+  margin-right: 1px;
+}
+.rslides_tabs a {
+  width: auto;
+  line-height: 20px;
+  padding: 9px 20px;
+  height: auto;
+  background: transparent;
+  display: inline;
+}
+.rslides_tabs li:first-child {
+  margin-left: 0;
+}
+.rslides_tabs .rslides_here a {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: bold;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+#download {
+  background: #333;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 60px auto;
+  max-width: 500px;
+  padding: 20px;
+}
+#download:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+.footer {
+  font-size: 11px;
+}
+/* Callback example */
+h3 {
+  font: 20px/30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+.events {
+  list-style: none;
+}
+.callbacks_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.callbacks li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.callbacks img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+}
+.callbacks .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+}
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../images/themes/themes.gif") no-repeat left top;
+  margin-top: -45px;
+}
+.callbacks_nav:active {
+  opacity: 1.0;
+}
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+#slider3-pager a {
+  display: inline-block;
+}
+#slider3-pager img {
+  float: left;
+}
+#slider3-pager .rslides_here a {
+  background: transparent;
+  box-shadow: 0 0 0 2px #666;
+}
+#slider3-pager a {
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font: 24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .callbacks_nav {
+    top: 47%;
   }
 }
 body,
