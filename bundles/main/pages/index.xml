@@ -20,6 +20,7 @@
 
         <p:page>
             <p:stripe_content_header/>
+
             <p:stripe_content_main/>
             <p:stripe_content_about/>
             <p:stripe_content_feedback/>

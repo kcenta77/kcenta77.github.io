@@ -35,7 +35,8 @@
 <t:xtitle><p:content/></t:xtitle>
 
 <t:xstyles>
-	<b:xlink x:href="css/main.styles.css"><m:style/></b:xlink>
+    <b:xlink x:href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800"></b:xlink>
+    <b:xlink x:href="css/main.styles.css"><m:style/></b:xlink>
     <b:xlink x:href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' x:rel='stylesheet' ></b:xlink>
 	<p:content/>
 	<cdata><![CDATA[<!--[if IE 9 ]>]]></cdata>

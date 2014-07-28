@@ -541,13 +541,13 @@
                             </li>
                           </ul>
                         </div>
-                        <!-- This is here just to demonstrate the callbacks -->
+                        <!-- This is here just to demonstrate the callbacks
                         <ul class="events">
                           <li><h3>Example 4 callback events</h3></li>
-                        </ul>
+                        </ul>-->
                         </div>
                     ]]></cdata>
-            <e:in block="stripe">
+            <!--<e:in block="stripe">
                 <e:text>
                     Hi there! We are the new kids on the block <cdata><![CDATA[<br/>]]></cdata>and we build awesome
                     websites and mobile apps.
@@ -556,7 +556,7 @@
                     <b:link x:href="http://vimeo.com/33790882" x:rel="media-gallery"><a:fancybox-media/>Watch the video
                     </b:link>
                 </b:button>
-            </e:in>
+            </e:in>-->
         </e:desc>
     </t:header>
 
@@ -596,4 +596,138 @@
                 </cdata>
         </b:phone-block>
     </t:phone-block>
+
+
+    <t:section_type_contextual_adv>
+        <b:section>
+        <m:content val="contextual_adv"/>
+        <!--<m:type val="inner"/>-->
+            <e:in>
+                <e:column>
+                    <m:posotion val="left"/>
+                    <e:title>Контекстная <e:title-colored tag="span">реклама</e:title-colored></e:title>
+                    <e:subtitle>Один из самых передовых, эффективных и удобных методов привлечения посетителей на сайт. </e:subtitle>
+                    <e:text tag="p">Ваше рекламное объявление будет показано только тем людям, которым оно будет действительно интересно.</e:text>
+                    <e:text tag="p">Профессиональная работа с контекстной рекламой быстро приводит к таким результатам:</e:text>
+                    <e:list><a:list/>
+                        <e:item>рост заказов;</e:item>
+                        <e:item>рост конверсии;</e:item>
+                        <e:item>снижение стоимости заказа.</e:item>
+                    </e:list>
+                </e:column>
+                <b:balloon-block><m:size val="big"/>
+                    <e:text> Снижение
+                        CPO более чем
+                        в <e:bigger-text tag="span">2 раза</e:bigger-text>
+                    </e:text>
+                </b:balloon-block>
+                <b:balloon-block><m:size val="min"/>
+                    <e:text>CRT - рост
+                        от <e:bigger-text tag="span">100%</e:bigger-text>
+                    </e:text>
+                </b:balloon-block>
+
+            </e:in>
+        </b:section>
+    </t:section_type_contextual_adv>
+
+
+    <t:section_type_optimization>
+        <b:section>
+            <m:content val="optimization"/>
+            <!--<m:type val="inner"/>-->
+            <e:in>
+                <e:title>оптимизация</e:title>
+                <e:subtitle>Поисковая оптимизация сайта является одним из самых правильных и обязательных инструментов
+                    маркетинга.
+                </e:subtitle>
+                <e:text>Поисковая оптимизация дает вечный и бесплатный трафик вашему сайту, а самое главное - она
+                    наиболее релеватная и растет с каждым месяцем.
+                </e:text>
+            </e:in>
+        </b:section>
+    </t:section_type_optimization>
+
+    <t:section_type_usability>
+        <b:section>
+            <m:content val="usability"/>
+            <!--<m:type val="inner"/>-->
+            <e:in>
+
+                <e:title>юзабилити</e:title>
+                <e:text>Вы можете иметь очень классный продукт, красивый сайт и хорошую рекламу, но все это не будет работать
+                    если вы не соблюдаете законы юзабилити.</e:text>
+                <e:text>Хотите узнать больше? Вы можете оставить нам заявку.</e:text>
+                <e:button x:type="button" x:value="Оставить заявку" tag="button"/>
+            </e:in>
+        </b:section>
+    </t:section_type_usability>
+
+    <t:section_type_cycle>
+        <b:section>
+            <m:content val="cycle"/>
+            <!--<m:type val="inner"/>-->
+            <e:in>
+                <b:cycle-list>
+                    <a:list>
+                        <e:item>
+                            <b:link>
+                                <b:ico>
+                                    <m:type val="sales-funnel"/>
+                                </b:ico>
+                            </b:link>
+                            <e:label>настройка воронки продаж</e:label>
+                        </e:item>
+                        <e:item>
+                            <b:link>
+                                <b:ico>
+                                    <m:type val="prof-analitics"/>
+                                </b:ico>
+                            </b:link>
+                            <e:label>профессиональная аналитика</e:label>
+                        </e:item>
+                        <e:item>
+                            <b:link>
+                                <b:ico>
+                                    <m:type val="usability"/>
+                                </b:ico>
+                            </b:link>
+                            <e:label>работа с юзабилити</e:label>
+                        </e:item>
+                        <e:item>
+                            <b:link>
+                                <b:ico>
+                                    <m:type val="increase-sales"/>
+                                </b:ico>
+                            </b:link>
+                            <e:label>увеличение ваших продаж</e:label>
+                        </e:item>
+                    </a:list>
+                </b:cycle-list>
+            </e:in>
+        </b:section>
+    </t:section_type_cycle>
+
+    <t:section_type_web-analitics>
+        <b:section>
+            <m:content val="web-analitics"/>
+            <!--<m:type val="inner"/>-->
+            <e:in>
+
+            </e:in>
+        </b:section>
+    </t:section_type_web-analitics>
+
+    <t:section_type_mobile-app>
+        <b:section>
+            <m:content val="mobile-app"/>
+            <!--<m:type val="inner"/>-->
+            <e:in>
+
+            </e:in>
+        </b:section>
+    </t:section_type_mobile-app>
+
+
+
 </templates>

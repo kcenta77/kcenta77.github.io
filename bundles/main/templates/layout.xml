@@ -27,11 +27,13 @@
         <b:stripe>
             <m:content val="main"/>
             <b:section>
-                <m:content val="content"/>
-                <p:section_type_services/>
-                <p:section_type_team/>
-                <p:section_type_skills/>
-                <p:section_type_portfolio/>
+                <m:content val="services"/>
+                <p:section_type_contextual_adv/>
+                <p:section_type_optimization/>
+                <p:section_type_usability/>
+                <p:section_type_cycle/>
+                <p:section_type_web-analitics/>
+                <p:section_type_mobile-app/>
             </b:section>
             <p:section_type_about/>
             <p:section_type_feedback/>
