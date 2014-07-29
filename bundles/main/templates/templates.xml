@@ -615,18 +615,21 @@
                         <e:item>снижение стоимости заказа.</e:item>
                     </e:list>
                 </e:column>
-                <b:balloon-block><m:size val="big"/>
-                    <e:text> Снижение
-                        CPO более чем
-                        в <e:bigger-text tag="span">2 раза</e:bigger-text>
-                    </e:text>
-                </b:balloon-block>
-                <b:balloon-block><m:size val="min"/>
-                    <e:text>CRT - рост
-                        от <e:bigger-text tag="span">100%</e:bigger-text>
-                    </e:text>
-                </b:balloon-block>
-
+                <b:bg-image>
+                    <e:image block="section" x:src="images/bg/contextual_adv.png" alt="">
+                        <m:type val="contextual_adv"/></e:image>
+                    <b:balloon-block><m:size val="big"/>
+                        <e:text> Снижение
+                            CPO более чем
+                            в <e:bigger-text tag="span">2 раза</e:bigger-text>
+                        </e:text>
+                    </b:balloon-block>
+                    <b:balloon-block><m:size val="min"/>
+                        <e:text>CRT - рост
+                            от <e:bigger-text tag="span">100%</e:bigger-text>
+                        </e:text>
+                    </b:balloon-block>
+                </b:bg-image>
             </e:in>
         </b:section>
     </t:section_type_contextual_adv>
@@ -645,6 +648,10 @@
                     наиболее релеватная и растет с каждым месяцем.
                 </e:text>
             </e:in>
+            <e:image>
+                <m:type val="contextual_adv"/>
+                <e:image-in tag="img" x:src="images/bg/contextual_adv.png" alt=""/>
+            </e:image>
         </b:section>
     </t:section_type_optimization>
 
