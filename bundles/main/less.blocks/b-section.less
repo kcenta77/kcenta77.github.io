@@ -26,37 +26,49 @@
     font-size: 1em;
     color: #1a1a1a;
     line-height: 26px;
-    padding-bottom: 16px;
+    padding-bottom: 15px;
     padding-left: 2px;
-  }
-  &__image {
-
   }
   &__image_type_contextual_adv {
     float: right;
     position: relative;
     top: -48px;
-    //right: 6%;
-    width: 491px;
-  }
+    right: 0;
+    width: 99%;
 
+  }
+  &__item {
+    line-height: 28px;
+    font-family: 'Open Sans',Arial, sans-serif;
+    display: block;
+  }
   &_content_services {
     /*background:#fff;
     padding:5em 0; */
   }
+  &__column {
+
+  }
+  &__column_position_left {
+    width: 46%;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &__column_position_right {
+    width: 46%;
+    float: right;
+    margin-top: 3em;
+  }
   &_content_contextual_adv {
     position: relative;
-    /*background:#e7f1f8;
-    padding:5em 0;*/
     .b-section__in {
       min-height: 418px;
-      background:  #fff url(../images/bg/contextual_adv.png) 89% 0 no-repeat;
       padding-top: 3em;
     }
-    .b-section__column {
-      width: 46%;
-      float: left;
-    }
+
     .b-section__title {
       /*color: #3C4761;*/
     }
@@ -65,14 +77,8 @@
       font-weight: 600;
       width: 60%;*/
     }
-    .b-grid__title {
-      /*color: #3C4761;*/
-    }
-    .b-grid__subtitle {
-      /*color: #30BAE7;*/
-    }
-    .b-grid__text {
-      /*color: #3C4761;*/
+    .b-bg-image {
+      width: 48%;
     }
   }
   &_content_optimization{
@@ -80,7 +86,6 @@
     /*padding:5em 0;*/
     .b-section__in {
       min-height: 332px;
-      background:  #fff url(../images/bg/optimization.png) 100% 0 no-repeat;
     }
     .b-section__title {
       /*color: #3C4761;*/
@@ -98,6 +103,9 @@
     }
     .b-grid__text {
       /*color: #3C4761;*/
+    }
+    .b-bg-image {
+      width: 51%;
     }
   }
   &_usability {
@@ -252,6 +260,15 @@
   &__group {
     margin-top: 3em;
   }
+}
+
+.icon-circle:before {
+  font-family: FontAwesome;
+  font-size: 5px;
+  line-height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0 5px 0 5px;
 }
 .b-line {
   text-align: center;

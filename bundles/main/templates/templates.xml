@@ -604,29 +604,34 @@
         <!--<m:type val="inner"/>-->
             <e:in>
                 <e:column>
-                    <m:posotion val="left"/>
+                    <m:position val="left"/>
                     <e:title>Контекстная <e:title-colored tag="span">реклама</e:title-colored></e:title>
                     <e:subtitle>Один из самых передовых, эффективных и удобных методов привлечения посетителей на сайт. </e:subtitle>
                     <e:text tag="p">Ваше рекламное объявление будет показано только тем людям, которым оно будет действительно интересно.</e:text>
                     <e:text tag="p">Профессиональная работа с контекстной рекламой быстро приводит к таким результатам:</e:text>
                     <e:list><a:list/>
-                        <e:item>рост заказов;</e:item>
-                        <e:item>рост конверсии;</e:item>
-                        <e:item>снижение стоимости заказа.</e:item>
+                        <e:item><alxc:icon-circle/>рост заказов;</e:item>
+                        <e:item><alxc:icon-circle/>рост конверсии;</e:item>
+                        <e:item><alxc:icon-circle/>снижение стоимости заказа.</e:item>
                     </e:list>
                 </e:column>
                 <b:bg-image>
                     <e:image block="section" x:src="images/bg/contextual_adv.png" alt="">
-                        <m:type val="contextual_adv"/></e:image>
-                    <b:balloon-block><m:size val="big"/>
-                        <e:text> Снижение
+                        <m:type val="contextual_adv"/>
+                    </e:image>
+                    <b:balloon-block>
+                        <m:size val="big"/>
+                        <e:text>Снижение
                             CPO более чем
-                            в <e:bigger-text tag="span">2 раза</e:bigger-text>
+                            в
+                            <e:bigger-text tag="span">2 раза</e:bigger-text>
                         </e:text>
                     </b:balloon-block>
-                    <b:balloon-block><m:size val="min"/>
+                    <b:balloon-block>
+                        <m:size val="min"/>
                         <e:text>CRT - рост
-                            от <e:bigger-text tag="span">100%</e:bigger-text>
+                            от
+                            <e:bigger-text tag="span">100%</e:bigger-text>
                         </e:text>
                     </b:balloon-block>
                 </b:bg-image>
@@ -640,18 +645,23 @@
             <m:content val="optimization"/>
             <!--<m:type val="inner"/>-->
             <e:in>
-                <e:title>оптимизация</e:title>
-                <e:subtitle>Поисковая оптимизация сайта является одним из самых правильных и обязательных инструментов
-                    маркетинга.
-                </e:subtitle>
-                <e:text>Поисковая оптимизация дает вечный и бесплатный трафик вашему сайту, а самое главное - она
-                    наиболее релеватная и растет с каждым месяцем.
-                </e:text>
+                <b:bg-image>
+                    <e:image block="section" x:src="images/bg/optimization.png" alt="">
+                        <m:type val="optimization"/>
+                    </e:image>
+                </b:bg-image>
+                <e:column>
+                    <m:position val="right"/>
+                    <e:title>оптимизация</e:title>
+                    <e:subtitle>Поисковая оптимизация сайта является одним из самых правильных и обязательных
+                        инструментов
+                        маркетинга.
+                    </e:subtitle>
+                    <e:text>Поисковая оптимизация дает вечный и бесплатный трафик вашему сайту, а самое главное - она
+                        наиболее релеватная и растет с каждым месяцем.
+                    </e:text>
+                </e:column>
             </e:in>
-            <e:image>
-                <m:type val="contextual_adv"/>
-                <e:image-in tag="img" x:src="images/bg/contextual_adv.png" alt=""/>
-            </e:image>
         </b:section>
     </t:section_type_optimization>
 

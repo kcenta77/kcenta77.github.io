@@ -140,7 +140,7 @@ body{
   font-size: 20px;
   font-family: 'Intro-Light-Alt';
   float: right;
-  margin: 32px 23% 0 0;
+  margin: 32px 2% 0 0;
   font-weight: bold;
 }
 .b-phone-block__code {
@@ -234,12 +234,19 @@ body{
   }
 }
 /**************** Media Quries ************************/
+@media only screen and (max-width: 1600px){
+}
 @media only screen and (max-width: 1366px){
   .b-stripe__in,
   .b-section__in {
     width:90%;
   }
   .b-section {
+    .b-section__in {
+      .b-section__title {
+        font-size: 2em;
+      }
+    }
     &__image {
 
     }
@@ -247,7 +254,7 @@ body{
       float: right;
       position: relative;
       top: -48px;
-      right: 6%;
+      right: 0;
       width: 48%;
     }
   }
@@ -259,6 +266,14 @@ body{
   }
 }
 @media all and (max-width:1024px){
+  .b-section {
+    .b-section__in {
+      .b-section__title {
+        font-size: 2em;
+      }
+    }
+  }
+
   .b-stripe__in,
   .b-section__in {
     width:90%;
@@ -271,6 +286,13 @@ body{
   }
 }
 @media all and (max-width:800px){
+  .b-section {
+    .b-section__in {
+      .b-section__title {
+        font-size: 1.4em;
+      }
+    }
+  }
   .b-stripe__in {
     width:95%;
   }
