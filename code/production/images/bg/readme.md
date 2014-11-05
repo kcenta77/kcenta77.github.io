@@ -1,1 +1,0 @@
-Decorative images (backgrounds, icons, etc)

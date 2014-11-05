@@ -1,1 +1,0 @@
-PNG-preview for PSD-files.
